@@ -1,0 +1,27 @@
+TUGAS 1
+Tugas: Buatlah program Go Lang yang:
+1.	Meminta input nama dan usia dari user
+2.	Menentukan kategori usia berdasarkan input usia
+a.	Anak-anak: usia < 18
+b.	Dewasa: usia >=18
+3.	Menampilkan pesan "Selamat datang, nama" dan kategori usia berdasarkan input user. Misal: "Selamat datang, Rudi Anda termasuk kategori dewasa."
+4.	gunakan library golang:
+a.	bufio -> input dari user
+b.	fmt -> input/output standar menampilkan ke layar
+c.	os -> berinteraksi dengan sistem operasi
+5.	Contoh penggunaan
+
+    // Membuat scanner untuk input dari konsol
+    scanner := bufio.NewScanner(os.Stdin)
+
+    // Input nama
+    fmt.Print("Masukkan nama Anda: ")
+    scanner.Scan() 
+    nama := scanner.Text()
+
+    // Input usia
+    fmt.Print("Masukkan usia Anda: ")
+    scanner.Scan()
+    var usia int
+    fmt.Sscanf(scanner.T
+ext(), "%d", &usia)
